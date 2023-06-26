@@ -1,0 +1,320 @@
+<!-- <div class="ram">
+    <div class="container bootstrap snippets bootdey">
+      <div class="panel-body inf-content">
+        <div class="row">
+          <div class="col-md-6">
+            <ul title="Ratings" class="list-inline ratings text-center">
+              <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6" style="align-items: center;justify-content: center;">
+                <h2>EMPLOYEE DETAILS</h2>
+                <br>
+                <strong>
+                  <span class="glyphicon glyphicon-asterisk text-primary"></span>
+                  Employee ID
+                </strong>
+              </div>
+              <div class="col-md-6 text-primar">
+                {{ e['EmployeeCode']}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <strong>
+                  <span class="glyphicon glyphicon-user text-primary"></span>
+                  Employee Name
+                </strong>
+              </div>
+              <div class="col-md-6 text-primary">
+                {{e["EmployeeName"]}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <strong>
+                  <span class="glyphicon glyphicon-cloud text-primary"></span>
+                  Email
+                </strong>
+              </div>
+              <div class="col-md-6 text-primary">
+                <a style='text-decoration: none;' href="mailto:charumathi.sb@dedalus.eu"> {{ e['Employee_MailId']}}</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <strong>
+                  <span class="glyphicon glyphicon-bookmark text-primary"></span>
+                  Location
+                </strong>
+              </div>
+              <div class="col-md-6 text-primary">
+                {{ e['Location']}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <strong>
+                  <span class="glyphicon glyphicon-eye-open text-primary"></span>
+                  Product Group
+                </strong>
+              </div>
+              <div class="col-md-6 text-primary">
+                {{ e?.['WorkGroup']}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <strong>
+                  <span class="glyphicon glyphicon-envelope text-primary"></span>
+                  Product
+                </strong>
+              </div>
+              <div class="col-md-6 text-primary">
+                {{ e['Product']}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <strong>
+                  <span class="glyphicon glyphicon-calendar text-primary"></span>
+                  Unified Roles
+                </strong>
+              </div>
+              <div class="col-md-6 text-primary">
+                {{e['UnifiedRoles']}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <strong>
+                  <span class="glyphicon glyphicon-calendar text-primary"></span>
+                  HL Role
+                </strong>
+              </div>
+              <div class="col-md-6 text-primary">
+                {{e['HLRole']}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <strong>
+                  <span class="glyphicon glyphicon-calendar text-primary"></span>
+                  HL title
+                </strong>
+              </div>
+              <div class="col-md-6 text-primary">
+                {{e['HLTitle']}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <strong>
+                  <span class="glyphicon glyphicon-calendar text-primary"></span>
+                  Date of Joining
+                </strong>
+              </div>
+              <div class="col-md-6 text-primary">
+                {{e['DateOfJoin']}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <strong>
+                  <span class="glyphicon glyphicon-calendar text-primary"></span>
+                  Unit
+                </strong>
+              </div>
+              <div class="col-md-6 text-primary">
+                {{e['Unit']}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <strong>
+                  <span class="glyphicon glyphicon-calendar text-primary"></span>
+                  Gender
+                </strong>
+              </div>
+              <div class="col-md-6 text-primary">
+                {{e['Gender']}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <strong>
+                  <span class="glyphicon glyphicon-calendar text-primary"></span>
+                  HL designation
+                </strong>
+              </div>
+              <div class="col-md-6 text-primary">
+                {{e['HLTitle']}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <strong>
+                  <span class="glyphicon glyphicon-calendar text-primary"></span>
+                  Reporting Manager
+                </strong>
+              </div>
+              <div class="col-md-6 text-primary">
+                {{e['ManagerName']}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <strong>
+                  <span class="glyphicon glyphicon-calendar text-primary"></span>
+                  Manager email
+                </strong>
+              </div>
+              <div class="col-md-6 text-primary">
+                <div class="col-md-8 text-primary">
+                  <a style='text-decoration: none;' href="mailto:charumathi.sb@dedalus.eu">{{e['ManagerMailId']}}</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <strong>
+                  <span class="glyphicon glyphicon-calendar text-primary"></span>
+                  Work Group
+                </strong>
+              </div>
+              <div class="col-md-6 text-primary">
+                {{e['ProductGroup']}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <strong>
+                  <span class="glyphicon glyphicon-calendar text-primary"></span>
+                  Product Work Area
+                </strong>
+              </div>
+              <div class="col-md-6 text-primary">
+                {{e['ProductWorkArea']}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   -->
+
+   <!-- <div class="ram">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title">Employee Name: {{e["EmployeeName"]}}</h4>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="D">
+                  <p>Dedalus ID</p>
+                  <p>Employee ID</p>
+                  <p>Gender</p>
+                  <p>Employee Mail ID</p>
+                  <p>Location</p>
+                  <p>Reporting Manager</p>
+                  <p>Product</p>
+                  <P>Manager Code</P>
+                  <p>Manager Mail ID</p>
+                  <p>Date Of Joining</p>
+                  
+                  <p>HL Designation</p>
+               
+                  <p>HL Role</p>
+                  <p>HL Title</p>
+                  <p>Owning</p>
+                  <p>Product Group</p>
+                  <p>Product Work Area</p>
+                  <p>Unified Roles</p>
+                  <p>Unit</p>
+                  <p>Work Group</p>
+                </div>
+              </div>
+                <div class="col-md-6">
+                  <div class="C">
+                  <p> {{ e.DedalusId}}</p>
+                  <p>  {{ e['EmployeeCode']}}</p>
+                  <p> {{ e.Gender }}</p>
+                  <p> {{ e.Employee_MailId }}</p>
+                  <p> {{ e.Location }}</p>
+                  <p> {{ e.ManagerName }}</p>
+                  <p> {{ e.Product }}</p>
+                  <p> {{ e.ManagerCode}}</p>
+                  <p> {{ e.ManagerMailId}}</p>
+                  <p> {{ e.DateofJoin | date:'dd-MMM-yyyy' }}</p>
+                  <p> {{ e.HLDesignation }}</p>
+                  <p> {{ e.HLRole }}</p>
+                  <p> {{ e.HLTitle }}</p>
+                  <p> {{ e.Owning }}</p>
+                  <p> {{ e.ProductGroup }}</p>
+                  <p> {{ e.ProductWorkArea }}</p>
+                  <p> {{ e.UnifiedRoles }}</p>
+                  <p> {{ e.Unit }}</p>
+                  <p> {{ e.WorkGroup }}</p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+    -->
+
+    <div class="container">
+      <div class="row justify-content-center">
+      <div class="col-md-9">
+      <div class="card">
+      <div class="card-header">
+      <h4 class="card-title">Employee Name: {{ employee?.EmployeeName }}</h4>
+      </div>
+      <div class="card-body">
+      <div class="row">
+      <div class="col-md-6">
+        
+      <p>Employee ID: <strong> {{ employee?.EmployeeCode }}</strong></p>
+      <p>Gender: <strong> {{ employee?.Gender }}</strong></p>
+      <p>Mail ID: <strong>{{ employee?.Employee_MailId }}</strong></p>
+      <p>Location : <strong>{{ employee?.Location }}</strong></p>
+      <p>Reporting Manager : <strong> {{ employee?.Location }}</strong> </p>
+      <p> Product: <strong> {{ employee?.Product }}</strong></p>
+      <p>Manager Mail ID: <strong>{{ employee?.ManagerMailId }}</strong></p>
+      <p>Date Of Joining: <strong> {{ employee?.DateofJoin | date:'dd-MMM-yyyy' }}</strong></p>
+      <p>HL Designation : <strong>{{ employee?.['HLDesignation'] }}</strong></p>
+      </div>
+      <div class="col-md-6">
+        <p>HL Role : <strong>{{ employee?.['HLRole'] }}</strong></p>
+        <p>Owning : <strong>{{ employee?.Owning }} </strong></p>
+        <p>Product Group :  <strong>{{employee?.['ProductGroup'] }} </strong></p>
+        <p>Product Work Area : <strong>{{ employee?.['ProductWorkArea'] }} </strong></p>
+        <p>Unified Roles : <strong>{{ employee?.['UnifiedRoles'] }}</strong> </p>
+        <p>Unit: <strong>{{ employee?.Unit }}</strong></p>
+        <p>Work Group : <strong>{{ employee?.['WorkGroup'] }}</strong></p>
+        <p>Dedalus ID: <strong>{{ employee?.DedalusId}}</strong></p>
+        <p>Manager Code: <strong>{{ employee?.ManagerCode }}</strong></p> 
+  
+  
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>

@@ -1,0 +1,176 @@
+<!-- <div class="ram">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">Employee Name: {{ employee?.['EmployeeName'] }}</h4>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="D">
+                <p >Dedalus ID </p>
+                <p>Employee ID</p>
+                <p>Gender</p>
+                <p>Employee Mail ID</p>
+                <p>Location</p>
+                <p>Reporting Manager</p>
+                <p>Product</p>
+                <P>Manager Code</P>
+                <p>Manager Mail ID</p>
+                <p>Date Of Joining</p>
+                <p>HL Designation</p>
+                <p>HL Role</p>
+                <p>HL Title</p>
+                <p>Owning</p>
+                <p>Product Group</p>
+                <p>Product Work Area</p>
+                <p>Unified Roles</p>
+                <p>Unit</p>
+                <p>Work Group</p>
+              </div>
+            </div>
+              <div class="col-md-6">
+                <div class="C">
+                <p> {{ employee?.DedalusId }}</p>
+                <p> {{ employee?.['EmployeeCode'] }}</p>
+                <p> {{ employee?.Gender }}</p>
+                <p> {{ employee?.['Employee_MailId'] }}</p>
+                <p> {{ employee?.Location }}</p>
+                <p> {{ employee?.['ManagerName'] }}</p>
+                <p> {{ employee?.Product }}</p>
+                <p> {{ employee?.ManagerCode}}</p>
+                <p> {{ employee?.['ManagerMailId'] }}</p>
+                <p> {{ employee?.['DateofJoin'] | date:'dd-MMM-yyyy' }}</p>
+                <p> {{ employee?.['HLDesignation'] }}</p>
+                <p> {{ employee?.['HLRole'] }}</p>
+                <p> {{ employee?.['HLTitle'] }}</p>
+                <p> {{ employee?.Owning }}</p>
+                <p> {{ employee?.['ProductGroup'] }}</p>
+                <p> {{ employee?.['ProductWorkArea'] }}</p>
+                <p> {{ employee?.['UnifiedRoles'] }}</p>
+                <p> {{ employee?.Unit }}</p>
+                <p> {{ employee?.['WorkGroup'] }}</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div> -->
+  
+
+
+
+  <!-- <div class="ram">
+    <div class="container">
+      <div class="row justify-content-center">
+      <div class="row" >
+        <div class="col-md-6" >
+        <div class="D">
+        <div class="row">
+          <div class="col-md-6">
+            <p>Dedalus ID:</p>
+            <p>Employee ID:</p>
+            <p>Gender:</p>
+            <p>Employee Mail ID:</p>
+            <p>Location</p>
+            <p>Reporting Manager</p>
+            <p>Product</p>
+            <P>Manager Code</P>
+            <p>Manager Mail ID</p>
+            <p>Date Of Joining</p>
+          </div>
+          <div class="col-md-6">
+            <p>{{ employee?.DedalusId }}</p>
+            <p>{{ employee?.['EmployeeCode'] }}</p>
+            <p>{{ employee?.['Employee_MailId'] }}</p>
+            <p>{{ employee?.Location }}</p>
+            <p> {{ employee?.Location }}</p>
+            <p> {{ employee?.['ManagerName'] }}</p>
+            <p> {{ employee?.Product }}</p>
+            <p> {{ employee?.ManagerCode}}</p>
+            <p> {{ employee?.['ManagerMailId'] }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="C">
+        <div class="row">
+          <div class="col-md-6">
+            <p>Date Of Joining</p>
+                <p>HL Designation</p>
+                <p>HL Role</p>
+                <p>HL Title</p>
+                <p>Owning</p>
+                <p>Product Group</p>
+                <p>Product Work Area</p>
+                <p>Unified Roles</p>
+                <p>Unit</p>
+                <p>Work Group</p>
+          </div>
+          <div class="col-md-6">
+            <p> {{ employee?.['DateofJoin'] | date:'dd-MMM-yyyy' }}</p>
+            <p> {{ employee?.['HLDesignation'] }}</p>
+            <p> {{ employee?.['HLRole'] }}</p>
+            <p> {{ employee?.['HLTitle'] }}</p>
+            <p> {{ employee?.Owning }}</p>
+            <p> {{ employee?.['ProductGroup'] }}</p>
+            <p> {{ employee?.['ProductWorkArea'] }}</p>
+            <p> {{ employee?.['UnifiedRoles'] }}</p>
+            <p> {{ employee?.Unit }}</p>
+            <p> {{ employee?.['WorkGroup'] }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div class="container">
+    <div class="row justify-content-center">
+    <div class="col-md-9">
+    <div class="card">
+    <div class="card-header">
+    <h4 class="card-title">Employee Name: {{ employee?.EmployeeName }}</h4>
+    </div>
+    <div class="card-body">
+    <div class="row">
+    <div class="col-md-6">
+      
+    <p>Employee ID: <strong> {{ employee?.EmployeeCode }}</strong></p>
+    <p>Gender: <strong> {{ employee?.Gender }}</strong></p>
+    <p>Mail ID: <strong>{{ employee?.Employee_MailId }}</strong></p>
+    <p>Location : <strong>{{ employee?.Location }}</strong></p>
+    <p>Reporting Manager : <strong> {{ employee?.Location }}</strong> </p>
+    <p> Product: <strong> {{ employee?.Product }}</strong></p>
+    <p>Manager Mail ID: <strong>{{ employee?.ManagerMailId }}</strong></p>
+    <p>Date Of Joining: <strong> {{ employee?.DateofJoin | date:'dd-MMM-yyyy' }}</strong></p>
+    <p>HL Designation : <strong>{{ employee?.['HLDesignation'] }}</strong></p>
+    </div>
+    <div class="col-md-6">
+      <p>HL Role : <strong>{{ employee?.['HLRole'] }}</strong></p>
+      <p>Owning : <strong>{{ employee?.Owning }} </strong></p>
+      <p>Product Group :  <strong>{{employee?.['ProductGroup'] }} </strong></p>
+      <p>Product Work Area : <strong>{{ employee?.['ProductWorkArea'] }} </strong></p>
+      <p>Unified Roles : <strong>{{ employee?.['UnifiedRoles'] }}</strong> </p>
+      <p>Unit: <strong>{{ employee?.Unit }}</strong></p>
+      <p>Work Group : <strong>{{ employee?.['WorkGroup'] }}</strong></p>
+      <p>Dedalus ID: <strong>{{ employee?.DedalusId}}</strong></p>
+      <p>Manager Code: <strong>{{ employee?.ManagerCode }}</strong></p> 
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>

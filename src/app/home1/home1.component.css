@@ -1,0 +1,33 @@
+.card {
+  margin-top: 50px;
+  text-align:left;
+  margin-bottom: 50px;
+}
+.card-title{
+  justify-content: auto;
+  display: flex;
+  color: white;
+}
+.card-header{
+  background-color: rgb(50, 122, 169);
+}
+.A{
+  font-weight: bold;
+}
+.B{
+  font-weight: bold;
+}
+
+h4{
+  text-align: center;
+  font-weight:bold ;
+}
+.p{
+  text-align: center;
+}
+.ram{
+  overflow-y:scroll ;
+  max-height: 93vh;
+  margin-top: 40px;
+  margin-left: 50px;
+}
